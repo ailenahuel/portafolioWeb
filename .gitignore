@@ -1,0 +1,28 @@
+# Ignorar dependencias de Node
+/node_modules/
+
+# Ignorar el directorio de build (salida) de Astro
+/dist/
+
+# Ignorar la caché de desarrollo y build de Astro
+/.astro/
+
+# Ignorar variables de entorno locales (¡MUY IMPORTANTE!)
+# Nunca subas tus contraseñas o claves secretas
+.env
+.env.*
+!.env.example
+
+# Archivos de logs de los gestores de paquetes
+npm-debug.log*
+yarn-error.log
+yarn-debug.log
+
+# Archivos de configuración del editor (VS Code, JetBrains)
+.vscode/
+.idea/
+
+# Archivos del sistema operativo (macOS y Windows)
+.DS_Store
+Thumbs.db
+desktop.ini
