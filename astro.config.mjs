@@ -3,6 +3,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 import cloudflare from '@astrojs/cloudflare';
 
+import sitemap from '@astrojs/sitemap';
+
 export default defineConfig({
   site: 'https://www.ailenahuel.cl/',
   base: '/',
@@ -11,5 +13,6 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  adapter: cloudflare()
+  adapter: cloudflare(),
+  integrations: [sitemap()]
 });
