@@ -49,6 +49,15 @@ const siteKeywords =
   gtag('js', new Date());
 
   gtag('config', 'G-34WX4Y4Z0L');
+</script> <script>
+  document.addEventListener("astro:page-load", () => {
+    if (window.gtag) {
+      gtag('event', 'page_view', {
+        page_path: window.location.pathname,
+        page_location: window.location.href,
+      });
+    }
+  });
 </script>
 		<link rel="canonical" href={siteUrl} />
 
